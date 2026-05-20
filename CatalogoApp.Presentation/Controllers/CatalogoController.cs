@@ -23,28 +23,30 @@ namespace Catalogo.Controllers
         private static List<Item> _items = new()
         {
             new Item {
-                Id          = 1,
-                Titulo      = "Devil May Cry",
-                Genero      = "Hack and Slash",
-                Ano         = 2001,
-                Consola     = "PlayStation 2",
-                Descripcion = "Videojuego que trata de un cazador mitad humano mitad demonio que debe evitar el regreso del rey del infierno."
+                Id = 1,
+                Titulo = "Coraline y la puerta secreta",
+                Genero = "Terror",
+                Ano = 2009,
+                Plataforma = "Claro Video, DGO",
+                Descripcion = "Una niña descubre una puerta secreta en su nueva casa y entra a una realidad alterna"
             },
-            new Item {
-                Id          = 2,
-                Titulo      = "Castlevania: Symphony of the Night",
-                Genero      = "Metroidvania",
-                Ano         = 1997,
-                Consola     = "PlayStation 2",
-                Descripcion = "Videojuego que trata de un cazador vampiro que debe detener a su padre, el conde Drácula."
+            new Item
+            {
+                Id = 2,
+                Titulo = "Isla de perros",
+                Genero = "Fantasia",
+                Ano = 2018,
+                Plataforma = "Disney+",
+                Descripcion = "El alcade de una ciudad japonesa decreta que todos los perros deben quedar confinados en una isla debido a una epidemia de gripe canina"
             },
-            new Item {
-                Id          = 3,
-                Titulo      = "NieR: Automata",
-                Genero      = "Acción-RPG",
-                Ano         = 2017,
-                Consola     = "PlayStation 4",
-                Descripcion = "Videojuego que trata de unos androides de batalla que deben detener a las máquinas alienígenas."
+            new Item
+            {
+                Id = 3,
+                Titulo = "El fantastico sr. zorro",
+                Genero = "Comedia",
+                Ano = 2009,
+                Plataforma = "Disney+",
+                Descripcion = "Tres malvados granjeros le declaran la guerra a un zorro y este anima a sus vecinos animales a defenderse"
             }
         };
         public IActionResult Index(string? genero)
